@@ -7,7 +7,7 @@ const SliderButton = (props) => {
 
   const clickSlider = () => {
     setClicked(!clicked);
-    // props.clickOnSlider();
+    props.clickOnSlider();
     !clicked ? 
       circleRef.current.style.left = (props.size - parseFloat(circleRef.current.style.width) - (!props.inner ? - 0.1 : 0.3)) + 'rem'
       :
