@@ -12,7 +12,6 @@ const SliderButton = (props) => {
       circleRef.current.style.left = (props.size - parseFloat(circleRef.current.style.width) - (!props.inner ? - 0.1 : 0.3)) + 'rem'
       :
       circleRef.current.style.left = (0 + (!props.inner ? -0.1 : 0.3)) + 'rem'
-
   };
 
   const hoverSliderIn = () => {
@@ -71,7 +70,7 @@ const click = () => {
   //pass
 }
 
-SliderButton2.defaultProps = {
+SliderButton.defaultProps = {
   size : 5,
   background: '#e8e8e8',
   inner: true,
